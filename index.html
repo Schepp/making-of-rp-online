@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/rp-online.css">
+		<link rel="stylesheet" href="css/extra-styles.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)" href="lib/css/xcode.css">
@@ -83,10 +84,44 @@
 				width: 1920,
 				height: 1080,
 				hash: true,
+				chart: {
+					defaults: {
+						global: {
+							title: {fontColor: "#000"},
+							tooltip: {bodyFontSize: 20, titleFontSize: 20, backgroundColor: "#000"},
+							legend: {
+								labels: {
+									fontColor: "#000",
+									fontSize: 20
+								},
+							},
+						},
+						scale: {
+							scaleLabel: {
+								fontColor: "#000",
+								fontSize: 20
+							},
+							gridLines: {color: "#000", zeroLineColor: "#000"},
+							ticks: {
+								fontColor: "#000",
+								fontSize: 20
+							},
+						}
+					},
+					line: {
+						borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"],
+						"borderDash": [[5, 10], [0, 0]]
+					},
+					bar: {backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]},
+					pie: {backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]]},
+					radar: {borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]},
+				},
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/chart/Chart.min.js' },
+					{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
