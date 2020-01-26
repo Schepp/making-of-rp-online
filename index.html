@@ -87,34 +87,50 @@
 				chart: {
 					defaults: {
 						global: {
-							title: {fontColor: "#000"},
-							tooltip: {bodyFontSize: 20, titleFontSize: 20, backgroundColor: "#000"},
+							title: {
+								fontFamily: "'Merriweather' serif",
+								fontColor: "#000"
+							},
+							tooltip: {
+								bodyFontSize: 60,
+								titleFontSize: 60,
+								backgroundColor: "#000"
+							},
 							legend: {
 								labels: {
 									fontColor: "#000",
-									fontSize: 20
+									fontSize: 60
 								},
 							},
 						},
 						scale: {
 							scaleLabel: {
 								fontColor: "#000",
-								fontSize: 20
+								fontSize: 60
 							},
-							gridLines: {color: "#000", zeroLineColor: "#000"},
+							gridLines: {
+								color: "#000",
+								zeroLineColor: "#000"
+							},
 							ticks: {
 								fontColor: "#000",
-								fontSize: 20
+								fontSize: 60
 							},
 						}
 					},
 					line: {
 						borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"],
-						"borderDash": [[5, 10], [0, 0]]
+						borderDash: [[5, 10], [0, 0]]
 					},
-					bar: {backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]},
-					pie: {backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]]},
-					radar: {borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]},
+					bar: {
+						backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]
+					},
+					pie: {
+						backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]]
+					},
+					radar: {
+						borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]
+					},
 				},
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },

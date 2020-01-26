@@ -11,6 +11,68 @@
     <li class="fragment"><blink>_</blink></li>
 </ul>
 ---
+## Zielgruppe
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": [
+    "Smartphones",
+    "Tablets",
+    "Desktops"
+  ],
+  "datasets": [
+   {
+    "data": [
+        67.15,
+        25.69,
+        7.17
+    ],
+    "label": "Gerätklasse","backgroundColor":"rgba(21,174,25,1)"
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+---
+## Zielgruppe
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": [
+    "Chromium",
+    "Safari",
+    "Firefox",
+    "Edge",
+    "Internet Explorer"
+  ],
+  "datasets": [
+   {
+    "data": [
+        57.36,
+        27.96,
+        8.21,
+        3.22,
+        2.99
+    ],
+    "label": "Browser Engines","backgroundColor":"rgba(21,174,25,1)"
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+---
+<!-- .slide: data-background="./assets/windows-7.png" -->
+---
 ## Technische Eckpfeiler
 
 <ul>
@@ -56,7 +118,7 @@
 [Profile-Komponente](./assets/components/profile.html)
 ---
 
-![Alles in einem Ordner](images/all-in-one-folder.png)
+![Alles in einem Ordner](./assets/all-in-one-folder.png)
 
 ---
 ## HTML 5.2
