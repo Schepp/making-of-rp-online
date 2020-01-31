@@ -34,14 +34,21 @@
   text-decoration: underline;
 }
 
-.reveal section img {
+.reveal section img:not([src*="browser"]) {
   min-width: 50%;
   max-height: 80vh;
   margin-bottom: 0;
+  width: auto;
   height: auto;
   border: 1px solid #0003;
   border-radius: 4px;
   vertical-align: bottom;
+}
+
+.reveal section img[src*="browser"] {
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .reveal section canvas {
@@ -71,4 +78,20 @@
 .reveal .blink,
 .reveal blink {
   animation: blink 1s steps(1, end) infinite;
+}
+
+.reveal [data-background] p,
+.reveal [data-background] ul,
+.reveal [data-background] ol {
+  color: #fff;
+}
+
+.reveal [data-background] h1,
+.reveal [data-background] h2,
+.reveal [data-background] h3,
+.reveal [data-background] h4,
+.reveal [data-background] h5,
+.reveal [data-background] h6 {
+  color: #fff;
+  text-shadow: 0 0 20px #000, 0 0 10px #000;
 }

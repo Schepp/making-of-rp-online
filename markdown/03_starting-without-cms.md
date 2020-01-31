@@ -11,6 +11,8 @@
     <li class="fragment"><blink>_</blink></li>
 </ul>
 ---
+<!-- .slide: data-transition="fade" -->
+
 ## Zielgruppe
 
 <canvas data-chart="bar">
@@ -44,6 +46,8 @@
 </canvas>
 
 ---
+<!-- .slide: data-transition="fade" -->
+
 ## Zielgruppe
 
 <canvas data-chart="bar">
@@ -59,7 +63,7 @@
   ],
   "datasets": [
    {
-    "label": "Browser Engines",
+    "label": "Browser Engines insgesamt",
     "data": [
         57.36,
         27.96,
@@ -83,8 +87,96 @@
 </canvas>
 
 ---
-<!-- .slide: data-background="./assets/windows-7.png" -->
+<!-- .slide: data-transition="fade" -->
+
+## Zielgruppe
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": [
+    "Chromium",
+    "Safari",
+    "Firefox",
+    "IE"
+  ],
+  "datasets": [
+   {
+    "label": "Browser Engines mobil",
+    "data": [
+        71.95,
+        26.43,
+        1.24,
+        0.28
+    ],
+    "backgroundColor": [
+      "#1DA462",
+      "#006CFF",
+      "#FF6611",
+      "#3277BC",
+      "#1EBBEE"
+    ]
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
 ---
+<!-- .slide: data-background="./assets/elephant-in-the-room.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Es steht ein Elefant im Raum...
+
+---
+
+![Internet Explorer Logo](assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png)
+
+---
+
+![Windows 7 auf jedem dritten Behörden-PC](assets/windows-7.png)
+
+---
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": [
+    "IE 11",
+    "IE < 11"
+  ],
+  "datasets": [
+   {
+    "label": "Internet Explorer Versionen",
+    "data": [
+        99.53,
+        0.47
+    ],
+    "backgroundColor": [
+      "#1EBBEE",
+      "#1EBBEE"
+    ]
+   }
+  ]
+ }, 
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+---
+
 ## Technische Eckpfeiler
 
 <ul>
