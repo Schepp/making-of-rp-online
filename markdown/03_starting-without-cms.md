@@ -109,11 +109,11 @@
     <li class="fragment"><blink>_</blink></li>
 </ul>
 ---
-<div class="resizable"><iframe src="assets/components/opener.html" scroll></iframe></div>
+<div class="resizable"><iframe data-src="assets/components/opener.html" scroll></iframe></div>
 
 [Opener-Komponente](./assets/components/opener.html)
 ---
-<div class="resizable"><iframe src="assets/components/profile.html" scroll></iframe></div>
+<div class="resizable"><iframe data-src="assets/components/profile.html" scroll></iframe></div>
 
 [Profile-Komponente](./assets/components/profile.html)
 ---

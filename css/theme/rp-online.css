@@ -135,13 +135,31 @@ body {
   width: 70%;
   margin: 20px auto;
   padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+  font-family: "Merriweather", serif;
+  quotes: "“" "”" "‘" "’"; }
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
   display: inline-block; }
+
+.reveal blockquote::before,
+.reveal blockquote::after {
+  position: absolute;
+  font-size: 300%;
+  font-family: "Times New Roman", serif;
+}
+
+.reveal blockquote::before {
+  content: open-quote;
+  top: -0.1em;
+  left: -0.5em;
+}
+
+.reveal blockquote::after {
+  content: close-quote;
+  right: -0.5em;
+  bottom: -0.6em;
+}
 
 .reveal q {
   font-style: italic; }
@@ -153,7 +171,7 @@ body {
   margin: 20px auto;
   padding: 40px 30px;
   text-align: left;
-  font-size: 0.55em;
+  font-size: 1em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;

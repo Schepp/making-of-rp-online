@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Making of RP ONLINE</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -53,6 +53,12 @@
 						 data-separator-notes="^Note:"
 						 data-charset="utf-8">
 				</section>
+				<section data-markdown="markdown/04_technical-deepdive-display-locking.md"
+						 data-separator="^-----\r?\n"
+						 data-separator-vertical="^---\r?\n"
+						 data-separator-notes="^Note:"
+						 data-charset="utf-8">
+				</section>
 				<section data-markdown="markdown/05_facing-reality.md"
 						 data-separator="^-----\r?\n"
 						 data-separator-vertical="^---\r?\n"
@@ -75,8 +81,8 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				width: 1920,
-				height: 1080,
+				width: 1280,
+				height: 720,
 				hash: true,
 				chart: {
 					defaults: {
@@ -134,6 +140,13 @@
 					{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				Array.from(event.currentSlide.querySelectorAll('video')).forEach((video) => {
+					video.currentTime = 0;
+					video.play();
+				});
 			});
 		</script>
 	</body>
