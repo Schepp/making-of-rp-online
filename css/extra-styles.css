@@ -4,6 +4,29 @@
   }
 }
 
+@keyframes newspaper {
+  0% {
+    transform: rotate(0deg) scale(0.1);
+    opacity: 0;
+    filter: blur(20px);
+    box-shadow: 0 0 20px -100px #ffff;
+  }
+  25% {
+    box-shadow: 0 0 20px -40px #ffff;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(720deg) scale(1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(720deg) scale(1);
+    filter: blur(0);
+    box-shadow: 0 0 20px 100px #fff0;
+  }
+}
+
 .reveal .resizable {
   width: 600px;
   height: 800px;
@@ -94,4 +117,9 @@
 .reveal [data-background] h6 {
   color: #fff;
   text-shadow: 0 0 20px #000, 0 0 10px #000;
+}
+
+.reveal .newspaper {
+  animation: newspaper 1s linear 0s 1 normal;
+  animation-fill-mode: both;
 }

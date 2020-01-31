@@ -144,7 +144,7 @@
 
 ---
 
-![Windows 7 auf jedem dritten Behörden-PC](assets/windows-7.png)
+![Windows 7 auf jedem dritten Behörden-PC](assets/windows-7.png)  <!-- .element: class="newspaper" -->
 
 ---
 
@@ -177,7 +177,7 @@
 
 ---
 
-## Technische Eckpfeiler
+## Technische Grundprinzipien
 
 <ul>
     <li class="fragment">Moderner Stack</li>
@@ -189,11 +189,12 @@
     <li class="fragment">Resilienz: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
 </ul>
 ---
+
 ## Moderner Stack
 
 <ul>
     <li class="fragment">HTML 5.2 und WAI-ARIA 1.1</li>
-    <li class="fragment">CSS für moderne Browser (z.B. Flexbox, Grid)</li>
+    <li class="fragment">Bleeding Edge CSS für <strike>moderne</strike> alle Browser (z.B. Flexbox, Grid)</li>
     <li class="fragment">SCSS als Precompiler + Autoprefixer als Post-Compiler</li>
     <li class="fragment">JavaScript nach ES6 (transpiliert nach ES5)</li>
     <li class="fragment">Gulp als Task-Runner, Webpack als Module-Bundler, Node-Tooling</li>
@@ -202,13 +203,14 @@
     <li class="fragment"><blink>_</blink></li>
 </ul>
 ---
+
 ## Komponenten-basiertes Design
 
 <ul>
     <li class="fragment">Baukastensystem: Schnelle Komposition neuer Seiten</li>
     <li class="fragment">Eine Komponente pro Usecase: DRY-Prinzip</li>
     <li class="fragment">Jede Komponente funktioniert in Isolation und ist einzeln testbar</li>
-    <li class="fragment">Alle Dateien an einem Ordner: Template, CSS, JS, Doku u. Testdaten</li>
+    <li class="fragment">Alle Bestandteile an einem Ordner: Template, CSS, JS, Doku u. Testdaten</li>
     <li class="fragment"><strike>Kein Atomic Design!</strike></li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
