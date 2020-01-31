@@ -24,12 +24,17 @@
   ],
   "datasets": [
    {
+    "label": "Gerätklasse",
     "data": [
         67.15,
-        25.69,
-        7.17
+        7.17,
+        25.69
     ],
-    "label": "Gerätklasse","backgroundColor":"rgba(21,174,25,1)"
+    "backgroundColor": [
+      "#222",
+      "#666",
+      "#FAFAFA"
+    ]
    }
   ]
  }, 
@@ -50,10 +55,11 @@
     "Safari",
     "Firefox",
     "Edge",
-    "Internet Explorer"
+    "IE"
   ],
   "datasets": [
    {
+    "label": "Browser Engines",
     "data": [
         57.36,
         27.96,
@@ -61,7 +67,13 @@
         3.22,
         2.99
     ],
-    "label": "Browser Engines","backgroundColor":"rgba(21,174,25,1)"
+    "backgroundColor": [
+      "#1DA462",
+      "#006CFF",
+      "#FF6611",
+      "#3277BC",
+      "#1EBBEE"
+    ]
    }
   ]
  }, 

@@ -38,6 +38,7 @@ TL;DR: Ja <!-- .element: class="fragment" -->
 * SEO möchte gerne viele Links haben <!-- .element: class="fragment" -->
 * Jedes Ressort möchte vertreten sein  <!-- .element: class="fragment" -->
 * Redakteure haben die Menge nicht im Blick  <!-- .element: class="fragment" -->
+* <span class="blink">_</span>
 
 ---
 

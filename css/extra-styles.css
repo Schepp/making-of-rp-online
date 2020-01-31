@@ -44,6 +44,12 @@
   vertical-align: bottom;
 }
 
+.reveal section canvas {
+  width: 140vh !important;
+  height: 70vh !important;
+  margin: 0 auto;
+}
+
 .reveal img.zoom {
   max-height: none;
   border: none;
@@ -62,6 +68,7 @@
   transition-timing-function: ease-in;
 }
 
-.reveal .blink {
+.reveal .blink,
+.reveal blink {
   animation: blink 1s steps(1, end) infinite;
 }
