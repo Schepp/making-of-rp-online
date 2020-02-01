@@ -5,6 +5,7 @@
  */
 @import url(../../lib/font/merriweather/merriweather.css);
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/volkhov/volkhov.css);
 
 :root {
   --color-brand: #ffbe00;
@@ -57,7 +58,6 @@ body {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -135,7 +135,7 @@ body {
   width: 70%;
   margin: 20px auto;
   padding: 5px;
-  font-family: "Merriweather", serif;
+  font-family: "Volkhov", "Times New Roman", Times, serif;
   quotes: "“" "”" "‘" "’"; }
 
 .reveal blockquote p:first-child,

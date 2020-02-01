@@ -1,19 +1,20 @@
 # Frontend-Architektur
 ---
-## Übergeordnete Ziele
+<!-- .slide: data-background="assets/target-group.jpg" -->
 
-<ul>
-    <li class="fragment">Gut skalierbar</li>
-    <li class="fragment">Nachvollziehbar und wartbar</li>
-    <li class="fragment">Performant</li>
-    <li class="fragment">Sicher</li>
-    <li class="fragment">Barrierefrei</li>
-    <li class="fragment"><blink>_</blink></li>
-</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Definition der Zielgruppe
+
 ---
-<!-- .slide: data-transition="fade" -->
-
-## Zielgruppe
 
 <canvas data-chart="bar">
 <!-- 
@@ -35,7 +36,7 @@
     "backgroundColor": [
       "#222",
       "#666",
-      "#FAFAFA"
+      "#C6C6C6"
     ]
    }
   ]
@@ -55,9 +56,6 @@
 </canvas>
 
 ---
-<!-- .slide: data-transition="fade" -->
-
-## Zielgruppe
 
 <canvas data-chart="bar">
 <!-- 
@@ -105,9 +103,6 @@
 </canvas>
 
 ---
-<!-- .slide: data-transition="fade" -->
-
-## Zielgruppe
 
 <canvas data-chart="bar">
 <!-- 
@@ -202,6 +197,18 @@
 [Quelle: statista](https://www.statista.com/statistics/700712/smartphone-market-share-in-germany-by-model/)
 
 ---
+
+## Samsung Galaxy A50 bei RP ONLINE
+
+= 41.794 Besucher pro Tag 
+
+---
+
+## Highend vs. Midrange
+
+![JavaScript Parsezeiten bei CNN](assets/devices-javascript-parse-times-cnn.png)
+
+---
 <!-- .slide: data-background="./assets/elephant-in-the-room.jpg" -->
 
 <br>
@@ -211,8 +218,10 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
-## Es steht ein Elefant im Raum...
+## Es steht noch ein Elefant im Raum…
 
 ---
 
@@ -253,11 +262,24 @@
 
 ---
 
+## Übergeordnete Ziele
+
+<ul>
+    <li class="fragment">Gut skalierbar</li>
+    <li class="fragment">Nachvollziehbar und wartbar</li>
+    <li class="fragment">Performant</li>
+    <li class="fragment">Sicher</li>
+    <li class="fragment">Barrierefrei</li>
+    <li class="fragment"><blink>_</blink></li>
+</ul>
+
+---
+
 ## Technische Grundprinzipien
 
 <ul>
     <li class="fragment">Moderner Stack</li>
-    <li class="fragment">Komponenten-basiert</li>
+    <li class="fragment">Komponentenbasiert</li>
     <li class="fragment">Mobile First</li>
     <li class="fragment">So wenig JavaScript wie möglich</li>
     <li class="fragment">So wenig externe Libraries wie möglich</li>
@@ -289,7 +311,7 @@ April 2017
 
 ---
 
-## Komponenten-basiertes Design
+## Komponentenbasiert
 
 <ul>
     <li class="fragment">Baukastensystem: Schnelle Komposition neuer Seiten</li>
@@ -299,6 +321,30 @@ April 2017
     <li class="fragment"><strike>Kein Atomic Design!</strike></li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
+
+---
+
+## Atomic Design
+
+![Atomic Design Prinzipien](assets/atomic-design-process.png)
+
+---
+
+## Atomic Design
+
+> Lag mein Element jetzt im Atom- oder im Molekül-Ordner? 🤔
+
+---
+
+## Atomic Design
+
+> Mein Element ist gewachsen. Muss ich es jetzt in den Molekül-Ordner umziehen? 🤔
+
+---
+
+## Atomic Design
+
+Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an Stakeholder 🥩
 
 ---
 
@@ -342,9 +388,9 @@ role="group"
 role="radiogroup"
 role="listbox"
 role="listitem"
-aria-labelledby="..."
+aria-labelledby="…"
 aria-level="3"
-...
+…
 ```
 ---
 ## Modernes CSS
@@ -362,7 +408,7 @@ object-fit: cover;
 pointer-events: none;
 calc()
 @supports() {}
-...
+…
 ```
 ---
 ## Mobile First CSS
@@ -402,7 +448,7 @@ calc()
 
 ```
 <article class="park-breaking">
-  <a href="..." class="park-breaking__link">
+  <a href="…" class="park-breaking__link">
     +++ Eilmeldung +++
     <h2 class="park-breaking__headlines">
     <span class="park-breaking__headline">Air Berlin besitzt keine eigenen Flugzeuge mehr</span>
@@ -441,7 +487,7 @@ Und wir nutzen moderne APIs:
 * Intersection Observer
 * Web Worker
 * Service Worker
-* ...
+* …
 
 ggf. inklusive Polyfills für alte Browser
 ---
