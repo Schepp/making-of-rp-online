@@ -348,15 +348,17 @@ Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an St
 
 ---
 
-<div class="resizable"><iframe data-src="assets/components/opener.html" scroll></iframe></div>
+## Alle Bestandteile in einem Ordner
 
-[Opener-Komponente](./assets/components/opener.html)
+<video autoplay muted>
+<source data-src="assets/all-component-parts-in-one-folder.mp4" type="video/mp4" />
+</video>
 
 ---
 
-<div class="resizable"><iframe data-src="assets/components/profile.html" scroll></iframe></div>
+## Isoliert entwickelt und testbar
 
-[Profile-Komponente](./assets/components/profile.html)
+<div class="resizable"><iframe data-src="assets/components/opener.html" scroll></iframe></div>
 
 ---
 
