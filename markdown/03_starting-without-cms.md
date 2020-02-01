@@ -40,7 +40,16 @@
    }
   ]
  }, 
- "options": { "responsive": "true" }
+ "options": { 
+    "responsive": true,
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+ }
 }
 -->
 </canvas>
@@ -81,7 +90,16 @@
    }
   ]
  }, 
- "options": { "responsive": "true" }
+ "options": { 
+    "responsive": true,
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+ }
 }
 -->
 </canvas>
@@ -120,10 +138,68 @@
    }
   ]
  }, 
- "options": { "responsive": "true" }
+ "options": { 
+    "responsive": true,
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+ }
 }
 -->
 </canvas>
+
+---
+
+<canvas data-chart="bar">
+<!-- 
+{
+ "data": {
+  "labels": [
+    "iPhone 11",
+    "Galaxy A50",
+    "iPhone 11 Pro",
+    "iPhone XR",
+    "Galaxy A70"
+  ],
+  "datasets": [
+   {
+    "label": "Smartphone Verkaufscharts Oktober 2019",
+    "data": [
+        12,
+        7,
+        5,
+        5,
+        4
+    ],
+    "backgroundColor": [
+      "#7D7D7D",
+      "#A4C639",
+      "#7D7D7D",
+      "#7D7D7D",
+      "#A4C639"
+    ]
+   }
+  ]
+ }, 
+ "options": { 
+    "responsive": true,
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+ }
+}
+-->
+</canvas>
+
+[Quelle: statista](https://www.statista.com/statistics/700712/smartphone-market-share-in-germany-by-model/)
 
 ---
 <!-- .slide: data-background="./assets/elephant-in-the-room.jpg" -->
@@ -188,20 +264,29 @@
     <li class="fragment">Graceful Degradation: Alte Browser bekommen weniger</li>
     <li class="fragment">Resilienz: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
 </ul>
+
 ---
 
-## Moderner Stack
+> Das CMS bekommen wir erst im Oktober vom Zulieferer. Aber es nutzt wohl PHP und Twig. 
+
+April 2017
+
+---
+
+## Stack
 
 <ul>
+    <li>Twig als Templatesprache</li>
     <li class="fragment">HTML 5.2 und WAI-ARIA 1.1</li>
     <li class="fragment">Bleeding Edge CSS für <strike>moderne</strike> alle Browser (z.B. Flexbox, Grid)</li>
-    <li class="fragment">SCSS als Precompiler + Autoprefixer als Post-Compiler</li>
+    <li class="fragment">SCSS als Pre-Compiler + PostCSS als Post-Compiler</li>
     <li class="fragment">JavaScript nach ES6 (transpiliert nach ES5)</li>
     <li class="fragment">Gulp als Task-Runner, Webpack als Module-Bundler, Node-Tooling</li>
     <li class="fragment">Code-Style-Konventionen für die Lesbarkeit</li>
     <li class="fragment">Code-Linter zur Verhinderung von Programmierfehlern</li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
+
 ---
 
 ## Komponenten-basiertes Design
@@ -214,14 +299,19 @@
     <li class="fragment"><strike>Kein Atomic Design!</strike></li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
+
 ---
+
 <div class="resizable"><iframe data-src="assets/components/opener.html" scroll></iframe></div>
 
 [Opener-Komponente](./assets/components/opener.html)
+
 ---
+
 <div class="resizable"><iframe data-src="assets/components/profile.html" scroll></iframe></div>
 
 [Profile-Komponente](./assets/components/profile.html)
+
 ---
 
 ![Alles in einem Ordner](./assets/all-in-one-folder.png)
