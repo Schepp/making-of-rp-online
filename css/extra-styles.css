@@ -185,3 +185,9 @@
   height: auto;
   max-height: none;
 }
+
+.reveal .side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}

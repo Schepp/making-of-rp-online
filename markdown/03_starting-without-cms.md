@@ -458,40 +458,17 @@ Für alte Browser nach ES5 transpiliert und differentiell ausgeliefert:
 
 ---
 
-## Komponentenbasiert
+<!-- .slide: data-background="assets/building-blocks.jpg" -->
 
-<ul>
-    <li class="fragment">Baukastensystem: Schnelle Komposition neuer Seiten</li>
-    <li class="fragment">Eine Komponente pro Usecase: DRY-Prinzip</li>
-    <li class="fragment">Jede Komponente funktioniert in Isolation und ist einzeln testbar</li>
-    <li class="fragment">Alle Bestandteile an einem Ordner: Template, CSS, JS, Doku u. Testdaten</li>
-    <li class="fragment"><strike>Kein Atomic Design!</strike></li>
-    <li class="fragment"><blink>_</blink></li>
-</ul>
+## Komponentensystem
 
 ---
 
-## Atomic Design
+## Baukastensystem
 
-![Atomic Design Prinzipien](assets/atomic-design-process.png)
+Eine Komponente pro Usecase / DRY-Prinzip
 
----
-
-## Atomic Design
-
-> Lag mein Element jetzt im Atom- oder im Molekül-Ordner? 🤔
-
----
-
-## Atomic Design
-
-> Mein Element ist gewachsen. Muss ich es jetzt in den Molekül-Ordner umziehen? 🤔
-
----
-
-## Atomic Design
-
-Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an Stakeholder 🥩
+![Komponenten, die die "button" Komponente verwenden](assets/component-dependency.png)
 
 ---
 
@@ -503,13 +480,78 @@ Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an St
 
 ---
 
-## Isoliert entwickelt und testbar
+## Isolation
+
+Jede Komponente wird in Isolation entwickelt und ist einzeln testbar
 
 <div class="resizable"><iframe data-src="assets/components/opener.html" scroll></iframe></div>
 
 ---
 
-![Alles in einem Ordner](./assets/all-in-one-folder.png)
+## Backend-less
+
+Das Frontend wird ausschließlich mit Mockdaten entwickelt.
+
+<div class="side-by-side">
+<div>
+
+```json
+{
+  "type": "submit",
+  "text": "Absenden"
+}
+```
+
+`button/data/default.json`
+
+</div>
+<div>
+
+```json
+{
+  "href": "#void",
+  "text": "Linktext"
+}
+```
+
+`button/data/link.json`
+
+</div>
+</div>
+
+---
+
+## Entwickeln von vorne nach hinten
+
+Design 🡆 Frontend 🡆 Backend 
+
+![Invision Apps Inspect Modus](assets/invision-inspect.png)
+
+---
+
+## Atomic Design
+
+![Atomic Design Prinzipien](assets/atomic-design-process.png)
+
+---
+
+## Atomic Design.
+
+> Lag mein Element jetzt im Atom- oder im Molekül-Ordner? 🤔
+
+---
+
+## Atomic Design?
+
+> Mein Element ist gewachsen. Muss ich es jetzt in den Molekül-Ordner umziehen? 🤔
+
+---
+
+## Atomic Design? Nein!
+
+Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an Stakeholder 🥩
+
+---
 
 ---
 ## Modernes CSS
