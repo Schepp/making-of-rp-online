@@ -200,6 +200,8 @@
 
 ## Samsung Galaxy A50 bei RP ONLINE
 
+![Samsung Galaxy A50 Handy](assets/samsung-galaxy-a50.png) <!-- .element: class="transparent" -->
+
 = 41.794 Besucher pro Tag 
 
 ---
@@ -225,7 +227,9 @@
 
 ---
 
-![Internet Explorer Logo](assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png)
+<!-- .slide: data-background="./assets/zombie-graveyard.jpg" -->
+
+![Internet Explorer Logo](assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png) <!-- .element: class="transparent" -->
 
 ---
 
@@ -285,6 +289,7 @@
     <li class="fragment">So wenig externe Libraries wie möglich</li>
     <li class="fragment">Graceful Degradation: Alte Browser bekommen weniger</li>
     <li class="fragment">Resilienz: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
+    <li class="fragment"><blink>_</blink></li>
 </ul>
 
 ---
@@ -295,15 +300,157 @@ April 2017
 
 ---
 
+<!-- .slide: data-background="./assets/stripes.png" -->
+
 ## Stack
 
+---
+
+## HTML 5.2
+
+```html
+<header>
+  <nav>…</nav> <input type="search">
+</header>
+<main>
+  <section>
+    <article>…</article>
+    <aside> <details>
+      <summary>…</summary> …
+    </details> </aside>
+    <dialog></dialog>
+  </section>
+</main>
+<footer></footer>
+```
+
+---
+
+## WAI-ARIA 1.1
+
+### Accessible Rich Internet Applications
+
+`aria-hidden` anstatt `display: none`.
+
+`aria-expanded="true/false"` + `aria-controls` als generische Aufklappsteuerung.
+
+`<h3 aria-level="6">`, immer wenn SEO findet, da muss eine H3 hin, obwohl die Semantik eine H6 erfordert.
+
+`<div role="group">` anstatt `<legend>`, das lauter Styling-Bugs hat.
+
+---
+
+```html
+<ul role="tablist">  
+  <li role="presentation">
+    <a role="tab" href="#section1" 
+       id="tab1" aria-selected="true">Erstes Tab</a>
+  </li>
+  …
+</ul>  
+<section role="tabpanel" 
+         id="section1" 
+         aria-labelledby="tab1">  
+  …
+</section> 
+```
+[Inclusive Components](https://inclusive-components.design/)
+
+---
+
+## CSS
+
+### Barrierearm, Mobile-First & Modern
+
+`rem` anstelle von `px` oder `em`. 
+
+Media Queries mit `em`, und "Mobile First".
+
+`display: flex` für überhaupt fast alles.
+
+`display: grid` für Formulare.
+
+`scroll-snap-type: x mandatory` und `scroll-behavior: smooth` für Galerien und Slider.
+
+SCSS als Pre-Compiler + PostCSS als Post-Compiler
+
+---
+
+*Flexbox* & *Grid* sind flexibler und schlanker als float-basierte Grids.
+
+*Scroll Snapping* & *Scroll Behavior* spart teure Bibliotheken ein:
+
+| Bibliothek              | Größe       |
+|-------------------------|-------------|
+| Flexslider ohne jQuery  |  22 KB      |
+| Flexslider *mit* jQuery | 107 KB      |
+| Slick Slider            |  52 KB      |
+| Swiper.js               | 136 KB      |
+
+---
+
+<!-- .slide: data-background="assets/windows-7-wallpaper.jpg" -->
+
+Ähm, Moment mal…
+
 <ul>
-    <li>Twig als Templatesprache</li>
-    <li class="fragment">HTML 5.2 und WAI-ARIA 1.1</li>
-    <li class="fragment">Bleeding Edge CSS für <strike>moderne</strike> alle Browser (z.B. Flexbox, Grid)</li>
-    <li class="fragment">SCSS als Pre-Compiler + PostCSS als Post-Compiler</li>
-    <li class="fragment">JavaScript nach ES6 (transpiliert nach ES5)</li>
-    <li class="fragment">Gulp als Task-Runner, Webpack als Module-Bundler, Node-Tooling</li>
+    <li class="fragment">Flexbox?</li>
+    <li class="fragment">Grid?</li>
+    <li class="fragment">Scroll Snapping?</li>
+</ul>
+
+Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
+
+---
+
+<!-- .slide: data-transition="fade" data-background="assets/alps.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Wer hat's erfunden?
+
+---
+
+<!-- .slide: data-transition="fade" data-background="assets/alps.jpg" -->
+
+![Internet Explorer Logo](assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png) <!-- .element: class="transparent" -->
+
+---
+
+## JavaScript
+
+<!-- .slide: data-background="#F0DB4F" -->
+
+Überall ES6, außer für inline-JavaScript.
+
+<strong>Keine</strong> ES Module, sondern globales Utility-Objekt: `window.park`.
+
+Für alte Browser nach ES5 transpiliert und differentiell ausgeliefert:
+
+```html
+<script type="module" crossorigin async
+        src="/assets/main.es6.js?v=1"></script>
+<script nomodule async
+        src="/assets/main.js?v=1"></script>
+```
+
+`main.js` = 110 KB / `main.es6.js` = 86 KB
+---
+
+<!-- .slide: data-background="assets/fake-javascript.png" -->
+
+## Sonstiges
+
+<ul>
+    <li class="fragment">Gulp als Task-Runner, Node-Tooling</li>
     <li class="fragment">Code-Style-Konventionen für die Lesbarkeit</li>
     <li class="fragment">Code-Linter zur Verhinderung von Programmierfehlern</li>
     <li class="fragment"><blink>_</blink></li>
@@ -364,36 +511,6 @@ Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an St
 
 ![Alles in einem Ordner](./assets/all-in-one-folder.png)
 
----
-## HTML 5.2
-
-```
-<header>
-<footer>
-<aside>
-<details>
-<dialog>
-<main>
-<input type="search">
-```
----
-## WAI-ARIA 1.1 (Accessible Rich Internet Applications)
-
-```
-role="main"
-role="search"
-role="heading"
-role="presentation"
-role="alert"
-role="tabpanel"
-role="group"
-role="radiogroup"
-role="listbox"
-role="listitem"
-aria-labelledby="…"
-aria-level="3"
-…
-```
 ---
 ## Modernes CSS
 

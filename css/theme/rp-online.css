@@ -169,25 +169,44 @@ body {
   position: relative;
   width: 90%;
   margin: 20px auto;
-  padding: 40px 30px;
+  padding: 30px 30px;
   text-align: left;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
+  border: 1px solid #0003;
+  border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
 
 .reveal code {
+  padding: 0 0.2em;
   font-family: monospace;
-  text-transform: none; }
+  font-size: 0.9em;
+  line-height: calc(1 / 0.9);
+  text-transform: none;
+  color: #000;
+  border: 1px solid #0003;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-shadow: none;
+}
 
 .reveal pre code {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
-  word-wrap: normal; }
+  max-height: 70vh;
+  font-size: 1em;
+  word-wrap: normal;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
 
 .reveal table {
   margin: auto;

@@ -1,3 +1,14 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+    filter: grayscale(1) drop-shadow(0 0 20px #fff);
+  }
+  to {
+    opacity: 1;
+    filter: grayscale(0.5) drop-shadow(0 0 20px #fff);
+  }
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -27,9 +38,13 @@
   }
 }
 
-
 .reveal h2 {
   margin-bottom: 0.8em;
+}
+
+.reveal h2 + h3 {
+  margin-top: -1em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 .reveal .resizable {
@@ -68,7 +83,7 @@
   text-decoration: underline;
 }
 
-.reveal section img:not([src*="browser"]) {
+.reveal section img {
   min-width: 50%;
   max-height: 80vh;
   margin-bottom: 0;
@@ -79,7 +94,8 @@
   vertical-align: bottom;
 }
 
-.reveal section img[src*="browser"] {
+.reveal section img.transparent {
+  max-height: none;
   border: none;
   box-shadow: none;
   background: transparent;
@@ -101,6 +117,14 @@
   border: 1px solid #0003;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal section table {
+  background-color: #fff;
+  border: 1px solid #0003;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 0.8em;
 }
 
 .reveal img.zoom {
@@ -126,23 +150,38 @@
   animation: blink 1s steps(1, end) infinite;
 }
 
-.reveal [data-background] p,
-.reveal [data-background] ul,
-.reveal [data-background] ol {
+.reveal [data-background]:not([data-background^="#"]) h1,
+.reveal [data-background]:not([data-background^="#"]) h2,
+.reveal [data-background]:not([data-background^="#"]) h3,
+.reveal [data-background]:not([data-background^="#"]) h4,
+.reveal [data-background]:not([data-background^="#"]) h5,
+.reveal [data-background]:not([data-background^="#"]) h6,
+.reveal [data-background]:not([data-background^="#"]) p,
+.reveal [data-background]:not([data-background^="#"]) ul,
+.reveal [data-background]:not([data-background^="#"]) ol {
   color: #fff;
 }
 
-.reveal [data-background] h1,
-.reveal [data-background] h2,
-.reveal [data-background] h3,
-.reveal [data-background] h4,
-.reveal [data-background] h5,
-.reveal [data-background] h6 {
+.reveal [data-background]:not([data-background^="#"]) > * {
   color: #fff;
-  text-shadow: 0 0 20px #000, 0 0 10px #000;
+  filter: drop-shadow(0 0 0.01em #000) drop-shadow(0 0 0.02em #000) drop-shadow(0 0 0.1em #0009);
+  mix-blend-mode: multiply;
 }
 
-.reveal .newspaper {
+.reveal .present > p > .newspaper {
   animation: newspaper 1s linear 0s 1 normal;
   animation-fill-mode: both;
+}
+
+.reveal .present[data-background$="zombie-graveyard.jpg"] img[alt*="Internet Explorer"] {
+  animation: fadein 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.reveal img[src$="samsung-galaxy-a50.png"] {
+  min-width: 0;
+  width: 40vh;
+  height: auto;
+  max-height: none;
 }
