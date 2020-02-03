@@ -85,7 +85,7 @@
 
 .reveal section img {
   min-width: 50%;
-  max-height: 80vh;
+  max-height: 614px;
   margin-bottom: 0;
   width: auto;
   height: auto;
@@ -102,10 +102,10 @@
 }
 
 .reveal section canvas {
-  width: 140vh !important;
-  height: 74vh !important;
+  width: 1136px !important;
+  height: 568px !important;
   margin: 0 auto;
-  padding: 2vh 0;
+  padding: 15px 0;
   background-color: #fff;
   border: 1px solid #0003;
   border-radius: 4px;
@@ -139,7 +139,7 @@
 }
 
 .reveal .fragment.visible + img.zoom {
-  transform-origin: center 70vh;
+  transform-origin: center 568px;
   transform: rotateX(2.1deg) translateY(-80%);
   transition-duration: 3s;
   transition-timing-function: ease-in;
@@ -181,7 +181,7 @@
 
 .reveal img[src$="samsung-galaxy-a50.png"] {
   min-width: 0;
-  width: 40vh;
+  width: 307px;
   height: auto;
   max-height: none;
 }
