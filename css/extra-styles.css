@@ -191,3 +191,13 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
+
+.reveal .ie-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  min-width: 0;
+  min-height: 0;
+}

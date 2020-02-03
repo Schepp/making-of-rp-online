@@ -1,3 +1,14 @@
+<!-- .slide: data-background="assets/painted-canvas.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # Display Locking
 
 ---

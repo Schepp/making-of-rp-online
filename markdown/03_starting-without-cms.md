@@ -1,5 +1,9 @@
+<!-- .slide: data-background="assets/architecture.jpg" -->
+
 # Frontend-Architektur
+
 ---
+
 <!-- .slide: data-background="assets/target-group.jpg" -->
 
 <br>
@@ -419,7 +423,18 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 
 <!-- .slide: data-transition="fade" data-background="assets/alps.jpg" -->
 
-![Internet Explorer Logo](assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png) <!-- .element: class="transparent" -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="assets/browser-logos/internet-explorer_9-11/internet-explorer_9-11_512x512.png" class="transparent ie-logo"><br>
+
+## Internet Explorer 10!
+
 
 ---
 
