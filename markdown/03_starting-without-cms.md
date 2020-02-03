@@ -425,6 +425,26 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 
 ---
 
+```html
+<style>
+  img { 
+    background-size: cover; 
+  }
+  @supports (object-fit: cover) {
+    img { 
+      background-image: none !important;
+      object-fit: cover; 
+    }
+  }
+</style>
+<img src="data:image/svg+xml,%3Csvg xmlns='…' 
+          width='261' height='196' %3E%3C/svg%3E" 
+     srcset="400.jpg 400w, 1200.jpg 1200w" 
+     style="background-image: url('1200.jpg')">
+```
+
+---
+
 ## JavaScript
 
 <!-- .slide: data-background="#F0DB4F" -->
