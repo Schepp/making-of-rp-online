@@ -372,8 +372,6 @@ Media Queries mit `em`, und "Mobile First".
 
 `scroll-snap-type: x mandatory` und `scroll-behavior: smooth` für Galerien und Slider.
 
-SCSS als Pre-Compiler + PostCSS als Post-Compiler
-
 ---
 
 *Flexbox* & *Grid* sind flexibler und schlanker als float-basierte Grids.
@@ -425,11 +423,23 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 
 ---
 
+<!-- .slide: data-transition="fade" data-background="assets/alps.jpg" -->
+
+![Can I Use Daten für CSSS Flexbox, Grid und Scroll Snap Points](assets/can-i-use.png)
+
+---
+
+<!-- .slide: data-transition="fade" data-background="assets/alps.jpg" -->
+
+![Can I Use Daten für CSSS Flexbox, Grid und Scroll Snap Points](assets/can-i-use-highlighted.png)
+
+---
+
 ```html
+<!-- Graceful Degradation -->
 <style>
-  img { 
-    background-size: cover; 
-  }
+  img { background-size: cover; }
+
   @supports (object-fit: cover) {
     img { 
       background-image: none !important;
@@ -442,6 +452,19 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
      srcset="400.jpg 400w, 1200.jpg 1200w" 
      style="background-image: url('1200.jpg')">
 ```
+
+---
+
+## CSS mit BEM: Block Element Modifier
+
+* Klares Name-Spacing pro Komponente (Block)
+* Klar Erkennbare Zugehörigkeit von DOM-Elementen (Elements) zu Komponenten
+* Verhindert ungewolltes Style-Bleeding in andere Komponenten
+* Ermöglicht einen problemlosen Wechsel der HTML-Semantik
+* Flache CSS-Spezifität
+* Sorgt für klare Zuständigkeiten (Komponente A funktioniert ohne Style von Komponente B)
+* Guter IDE-Support
+* Nachteil: Menge wächst linear mit der Anzahl Komponenten
 
 ---
 
@@ -463,18 +486,41 @@ Für alte Browser nach ES5 transpiliert und differentiell ausgeliefert:
 ```
 
 `main.js` = 110 KB / `main.es6.js` = 86 KB
+
 ---
+
+Wir nutzen moderne APIs:
+
+* element.closest()
+* element.matches()
+* Promises
+* async/await
+* Fetch API
+* Mutation Observer
+* Intersection Observer
+* Web Worker
+* Service Worker
+* …
+
+ggf. inklusive Polyfills für alte Browser
+
+---
+
+## Code-Styles & Linter
+
+* editorConfig für die generelle Formatierung mit Spaces und Tabs
+* ESLint für JavaScript mit der AirBnB-Vorlage, mit leichten Anpassungen
+* StyleLint zum Prüfen zu tiefer Verschachtelung
+* JSONLint zur Prüfung unserer Dummy-Daten
 
 <!-- .slide: data-background="assets/fake-javascript.png" -->
 
-## Sonstiges
+## Sonstiges?
 
-<ul>
-    <li class="fragment">Gulp als Task-Runner, Node-Tooling</li>
-    <li class="fragment">Code-Style-Konventionen für die Lesbarkeit</li>
-    <li class="fragment">Code-Linter zur Verhinderung von Programmierfehlern</li>
-    <li class="fragment"><blink>_</blink></li>
-</ul>
+* SCSS als Pre-Compiler + PostCSS als Post-Processor
+* Babel zum Transpilieren + Terser zum Minifizieren
+* Gulp als Task-Runner, Node-Tooling
+* Source Maps auch in Production
 
 ---
 
@@ -570,123 +616,3 @@ Design 🡆 Frontend 🡆 Backend
 ## Atomic Design? Nein!
 
 Als sehr plakatives System hilfreich beim "Verkauf" von Komponenten-System an Stakeholder 🥩
-
----
-
----
-## Modernes CSS
-
-```
-1rem
-1vw
-1vh
-display: flex;
-display: grid;
-position: sticky;
-column-width: 20rem;
-filter: drop-shadow();
-object-fit: cover;
-pointer-events: none;
-calc()
-@supports() {}
-…
-```
----
-## Mobile First CSS
-
-```
-.element {
-  width: 100%;
-}
-
-@media screen and (min-width: 40em) {
-  .element {
-    width: 40rem;
-  }
-}
-```
----
-## CSS mit BEM: Block Element Modifier
-
-* Klares Name-Spacing pro Komponente (Block)
-* Klar Erkennbare Zugehörigkeit von DOM-Elementen (Elements) zu Komponenten
-* Verhindert ungewolltes Style-Bleeding in andere Komponenten
-* Ermöglicht einen problemlosen Wechsel der HTML-Semantik
-* Flache CSS-Spezifität
-* Sorgt für klare Zuständigkeiten (Komponente A funktioniert ohne Style von Komponente B)
-* Guter IDE-Support
-* Nachteil: Viel Text, wird aber durch eine gute IDE und GZIP-Kompression aufgehoben
----
-<!-- .slide: data-background="images/bem.png" data-state="inverted" -->
----
-## CSS mit BEM: Block Element Modifier
-
-* Block: [blockname]
-* Element im Block: [blockname]__[elementname]
-* Block-Variation (Modifier): [blockname]__[variationsname]
----
-## CSS mit BEM: Beispiel
-
-```
-<article class="park-breaking">
-  <a href="…" class="park-breaking__link">
-    +++ Eilmeldung +++
-    <h2 class="park-breaking__headlines">
-    <span class="park-breaking__headline">Air Berlin besitzt keine eigenen Flugzeuge mehr</span>
-         : <span class="park-breaking__kicker">Nur noch geleaste Maschinen</span>
-      </h2>
-  </a>
-</article>
-```
----
-## Barrierefreiheit
-
-<ul>
-    <li>Tastaturnavigierbarkeit</li>
-    <li>Focus-Styles</li>
-    <li>Alternativtexte für (non-dekorative) Grafiken</li>
-    <li>Passende HTML-Semantik, z.B. `<a>` vs. `<button>`, Überschriftenlevels</li>
-    <li>WAI-ARIA</li>
-    <li>Sinnvolle Informationsstruktur bei defektem oder deaktiviertem CSS</li>
-    <li>Funktionale Website auch bei defektem oder deaktiviertem JavaScript</li>
-    <li>Flexibles Layout dank `rem`- und `em`-Units</li>
-    <li><blink>_</blink></li>
-</ul>
----
-## Modernes JavaScript
-
-Wir verwenden ES6 Syntax, weil es kompakter zu schreiben ist und wir es in Zukunft direkt an die Browser ausliefern können (auch heute ist das schon mit einem speziellen Verfahren möglich). Für alte Browser transpilieren wir nach ES5 (mit Babel).
-
-Und wir nutzen moderne APIs:
-
-* element.closest()
-* element.matches()
-* Promises
-* async/await
-* Fetch API
-* Mutation Observer
-* Intersection Observer
-* Web Worker
-* Service Worker
-* …
-
-ggf. inklusive Polyfills für alte Browser
----
-## Code-Styles & Linter
-
-* editorConfig für die generelle Formatierung mit Spaces und Tabs
-* ESLint für JavaScript mit der AirBnB-Vorlage, mit leichten Anpassungen
-* StyleLint zum Prüfen zu tiefer Verschachtelung
-* JSONLint zur Prüfung unserer Dummy-Daten
----
-## Automation
-
-Gulp als Task-Runner: 
-
-* Transpilieren, Concaternieren, Komprimieren von JavaScript und CSS
-* Vendorprefixing für CSS
-* Down-Stripping des head.css
-* Erzeugen von WOFF- und WOFF2-Schriftformaten aus TTF
-* SVG Optimieren und SVG-Sprites Erzeugen
-* Aufbereitung der Templates für unseren clientseitigen Renderer
-* Rendern von Dummy-Seiten, EinzelKomponenten und Komponenten-Browser
