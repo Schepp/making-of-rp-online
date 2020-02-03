@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Nachteile
 
+Nachträglich eingefügte Komponenten müssen per Hand "nach-initialisiert" werden.
+
+---
+
+## Nachteile
+
 Bis `DOMContentLoaded` ausgelöst wird, also alles HTML empfangen ist, vergehen auf unserer Startseite fast 5 Sekunden!
 
 ![Webpagetest Testbericht mit DOMContentLoaded bei 4,7 Sekunden](assets/domcontentloaded.png)
