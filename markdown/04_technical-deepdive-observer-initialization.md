@@ -40,7 +40,9 @@ Bis `DOMContentLoaded` ausgelöst wird, also alles HTML empfangen ist, vergehen 
 
 ---
 
-Es werden ausnahmslos alle Elemente erfasst und initialisiert, egal ob sie gerade sichtbar sind, oder nicht.
+## Nachteile
+
+Es werden ausnahmslos alle Elemente erfasst und initialisiert.
 
 <div class="measure">
     <div class="measure__visible">4%</div>
