@@ -199,13 +199,17 @@ body {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 70vh;
+  max-height: 537px;
   font-size: 1em;
   word-wrap: normal;
   border: none;
   border-radius: 0;
   background-color: transparent;
   box-shadow: none;
+}
+
+.reveal pre:only-child code {
+  max-height: 600px;
 }
 
 .reveal table {
