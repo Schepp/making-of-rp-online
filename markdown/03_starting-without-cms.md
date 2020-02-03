@@ -417,7 +417,7 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 <br>
 <br>
 
-## Wer hat's erfunden?
+## Wer hat’s erfunden?
 
 ---
 

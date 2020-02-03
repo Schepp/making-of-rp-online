@@ -34,11 +34,12 @@ Bis `DOMContentLoaded` ausgelöst wird, also alles HTML empfangen ist, vergehen 
 
 ---
 
-## Nachteile
-
 Es werden ausnahmslos alle Elemente erfasst und initialisiert, egal ob sie gerade sichtbar sind, oder nicht.
 
-![Webpagetest Testbericht mit DOMContentLoaded bei 4,7 Sekunden](assets/domcontentloaded.png)
+<div class="measure">
+    <div class="measure__visible">4%</div>
+    <div class="measure__invisible">96%</div>
+</div><img src="assets/full-rp-online-homepage-highlighted.jpg" alt="Gesamte RP-ONLINE Startseite" class="fullpage fullpage-zoom">
 
 ---
 
