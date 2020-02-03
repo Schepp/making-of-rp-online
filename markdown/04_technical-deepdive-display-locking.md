@@ -13,13 +13,11 @@
 
 ---
 
-Die Startseite ist lang...
+Also, die Startseite, die ist ja lang...
 
 <video autoplay muted>
 <source data-src="assets/scrolling-homepage-desktop.mp4" type="video/mp4" />
 </video>
-
-...seeeehr lang <!-- .element: class="fragment" -->
 
 ---
 

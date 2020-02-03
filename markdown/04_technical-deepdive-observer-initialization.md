@@ -71,7 +71,7 @@ mutation.addedNodes.forEach(node => {
 
 ```js
 const initMap = {
-  '.element'(node) { /* Initialisierungsfunktion */ },
+  '.element': (node) => { /* Init Funktion */ },
 };
 
 mutation.addedNodes.forEach(node => {
