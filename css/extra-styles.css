@@ -105,8 +105,14 @@
   vertical-align: bottom;
 }
 
+.reveal section img.autoheight {
+  min-width: 0;
+  max-height: none;
+}
+
 .reveal section img.transparent {
   max-height: none;
+  min-height: 0;
   border: none;
   box-shadow: none;
   background: transparent;
@@ -180,6 +186,15 @@
   mix-blend-mode: multiply;
 }
 
+.reveal [data-background$="widgets.jpg"]:not([data-background^="#"]) h1 {
+  color: #222;
+}
+
+.reveal [data-background$="widgets.jpg"]:not([data-background^="#"]) > * {
+  color: #222;
+  filter: drop-shadow(0 0 0.01em #fff) drop-shadow(0 0 0.02em #fff) drop-shadow(0 0 0.1em #fff9);
+}
+
 .reveal .present > p > .newspaper {
   animation: newspaper 1s linear 0s 1 normal;
   animation-fill-mode: both;
@@ -200,8 +215,13 @@
 
 .reveal .side-by-side {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  width: 100%;
+  grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-gap: 0.5em;
+}
+
+.reveal .side-by-side > * {
+  width: auto;
 }
 
 .reveal .ie-logo {
@@ -257,4 +277,21 @@
   line-height: 20px;
   background-color: #ffff;
   color: #000;
+}
+
+.reveal .fragment + h2 .text-reveal {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  letter-spacing: -1em;
+  transition-property: max-width, letter-spacing;
+  transition-duration: 0.6s;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.reveal .fragment.visible + h2 .text-reveal {
+  max-width: 500px;
+  letter-spacing: 0;
 }

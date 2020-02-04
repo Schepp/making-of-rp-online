@@ -42,12 +42,11 @@ Also, die Startseite, die ist ja lang...
 
 ## Muss die Seite so lang sein?
 
-TL;DR: Ja <!-- .element: class="fragment" -->
+TL;DR: Ja!
 
-* SEO möchte gerne viele Links haben <!-- .element: class="fragment" -->
-* Jedes Ressort möchte vertreten sein  <!-- .element: class="fragment" -->
-* Redakteure haben die Menge nicht im Blick  <!-- .element: class="fragment" -->
-* <span class="blink">_</span>
+* SEO möchte gerne viele Links haben
+* Jedes Ressort möchte vertreten sein
+* Redakteure haben die Menge nicht im Blick
 
 ---
 

@@ -169,7 +169,7 @@ body {
   position: relative;
   width: 90%;
   margin: 20px auto;
-  padding: 30px 30px;
+  padding: 30px 10px 30px 30px;
   text-align: left;
   font-size: 0.9em;
   font-family: monospace;
@@ -197,9 +197,10 @@ body {
 
 .reveal pre code {
   display: block;
-  padding: 5px;
+  padding: 0;
   overflow: auto;
   max-height: 537px;
+  overflow: hidden;
   font-size: 1em;
   word-wrap: normal;
   border: none;
