@@ -491,16 +491,7 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 
 <strong>Keine</strong> ES Module, sondern globales Utility-Objekt: `window.park`.
 
-Für alte Browser nach ES5 transpiliert und differentiell ausgeliefert:
-
-```html
-<script type="module" crossorigin async
-        src="/assets/main.es6.js?v=1"></script>
-<script nomodule async
-        src="/assets/main.js?v=1"></script>
-```
-
-`main.js` = 110 KB / `main.es6.js` = 86 KB
+<blink class="fragment">KEIN TYPESCRIPT!</blink>
 
 ---
 
