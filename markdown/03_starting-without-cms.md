@@ -4,6 +4,20 @@
 
 ---
 
+## Übergeordnete Ziele
+
+<ul>
+    <li class="fragment">Skalierbar / Komponentenbasiert</li>
+    <li class="fragment">Nachvollziehbar und wartbar</li>
+    <li class="fragment">Performant</li>
+    <li class="fragment">Sicher</li>
+    <li class="fragment">Barrierefrei</li>
+    <li class="fragment">Resilient: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
+    <li class="fragment"><blink>_</blink></li>
+</ul>
+
+---
+
 <!-- .slide: data-background="assets/target-group.jpg" -->
 
 <br>
@@ -270,29 +284,14 @@
 
 ---
 
-## Übergeordnete Ziele
-
-<ul>
-    <li class="fragment">Gut skalierbar</li>
-    <li class="fragment">Nachvollziehbar und wartbar</li>
-    <li class="fragment">Performant</li>
-    <li class="fragment">Sicher</li>
-    <li class="fragment">Barrierefrei</li>
-    <li class="fragment"><blink>_</blink></li>
-</ul>
-
----
-
 ## Technische Grundprinzipien
 
 <ul>
-    <li class="fragment">Moderner Stack</li>
-    <li class="fragment">Komponentenbasiert</li>
     <li class="fragment">Mobile First</li>
+    <li class="fragment">Moderner Stack (Chrome als Ausgangspunkt)</li>
     <li class="fragment">So wenig JavaScript wie möglich</li>
     <li class="fragment">So wenig externe Libraries wie möglich</li>
     <li class="fragment">Graceful Degradation: Alte Browser bekommen weniger</li>
-    <li class="fragment">Resilienz: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
 
@@ -307,6 +306,25 @@ April 2017
 <!-- .slide: data-background="./assets/stripes.png" -->
 
 ## Stack
+
+---
+
+## Twig Templating Engine
+
+```twig
+<aside class="notification
+{% if type is defined %}
+  notification--{{ type }}
+{% endif %}"
+{% if type is defined and type is same as('error') %}
+  role="alert"
+{% endif %}>
+  <strong class="notification__headline">
+    {{ headline }}
+  </strong>
+  {{ body }}  
+</aside>
+```
 
 ---
 
@@ -336,11 +354,14 @@ April 2017
 
 `aria-hidden` anstatt `display: none`.
 
-`aria-expanded="true/false"` + `aria-controls` als generische Aufklappsteuerung.
+`aria-expanded="true/false"` + `aria-controls`  
+als generische Aufklappsteuerung.
 
-`<h3 aria-level="6">`, immer wenn SEO findet, da muss eine H3 hin, obwohl die Semantik eine H6 erfordert.
+`<h3 aria-level="6">`, wenn SEO eine H3 wünscht,  
+die Semantik aber eine H6 erfordert.
 
-`<div role="group">` anstatt `<legend>`, das lauter Styling-Bugs hat.
+`<div role="group">` anstatt `<legend>`,  
+weil das lauter Styling-Bugs hat.
 
 ---
 
@@ -368,7 +389,7 @@ April 2017
 
 `rem` anstelle von `px` oder `em`. 
 
-Media Queries mit `em`, und "Mobile First".
+Media Queries mit `em`, und **Mobile First**.
 
 `display: flex` für überhaupt fast alles.
 
@@ -378,9 +399,13 @@ Media Queries mit `em`, und "Mobile First".
 
 ---
 
-*Flexbox* & *Grid* sind flexibler und schlanker als float-basierte Grids.
+## CSS
 
-*Scroll Snapping* & *Scroll Behavior* spart teure Bibliotheken ein:
+### Erledige soviel nativ, wie Du kannst!
+
+**Flexbox** & **Grid** sind flexibler und schlanker als float-basierte Grids.
+
+**Scroll Snapping** & **Scroll Behavior** spart teure Bibliotheken ein:
 
 | Bibliothek              | Größe       |
 |-------------------------|-------------|
@@ -395,13 +420,11 @@ Media Queries mit `em`, und "Mobile First".
 
 Ähm, Moment mal…
 
-<ul>
-    <li class="fragment">Flexbox?</li>
-    <li class="fragment">Grid?</li>
-    <li class="fragment">Scroll Snapping?</li>
-</ul>
+* Flexbox?
+* Grid?
+* Scroll Snapping?
 
-Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
+Was ist denn jetzt mit IE?
 
 ---
 
@@ -470,16 +493,14 @@ Was ist denn jetzt mit IE? <!-- .element: class="fragment" -->
 
 ---
 
-## CSS mit BEM: Block Element Modifier
+## CSS mit BEM
 
-* Klares Name-Spacing pro Komponente (Block)
-* Klar Erkennbare Zugehörigkeit von DOM-Elementen (Elements) zu Komponenten
-* Verhindert ungewolltes Style-Bleeding in andere Komponenten
+* Verhindert Style-Bleeding in andere Komponenten
+* Klar erkennbare Zugehörigkeit von DOM-Elementen zu Komponenten
 * Ermöglicht einen problemlosen Wechsel der HTML-Semantik
 * Flache CSS-Spezifität
-* Sorgt für klare Zuständigkeiten (Komponente A funktioniert ohne Style von Komponente B)
-* Guter IDE-Support
-* Nachteil: Menge wächst linear mit der Anzahl Komponenten
+
+**Nachteil:** Menge wächst linear mit der Anzahl Komponenten
 
 ---
 

@@ -197,9 +197,10 @@ body {
 
 .reveal pre code {
   display: block;
-  padding: 5px;
+  padding: 0;
   overflow: auto;
   max-height: 537px;
+  overflow: hidden;
   font-size: 1em;
   word-wrap: normal;
   border: none;
