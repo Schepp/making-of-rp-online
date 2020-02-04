@@ -1,47 +1,48 @@
-# Einfach machen
-
-- The magic moment (Richtiger Zeitpunkt am richtigen Ort sein).
-- Einfach machen (keine Projektgruppe).
-- Sketch Entwürfe und Ideen, die man intern präsentiert. 
-- Wenn diese Entwürfe und Skizzen einmal da sind, wird drüber gesprochen. 
-- Dann nimmt das thema fahrt an.
+<!-- .slide: data-background="assets/rainy-day.jpg" -->
+# Relaunch 
+---
+<!-- .slide: data-background="assets/rainy-day-sketch-all.jpg" -->
 
 ---
 
-# Steakholder abholen und überzeugen
+# Stakeholder abholen und überzeugen
 
-- Steakholder: SEO, Portalmanagement, Advertising, Redaktion, Vertrieb
-- Alle Überzeugen und Mitnehmen, Sie zu "FANS" machen. Dafür begeistern.
-- Jede Kritik, jede Idee und jede Anmerkung ernst nehmen und wertschätzen. 
+* Redaktion<!-- .element: class="fragment" -->
+* SEO<!-- .element: class="fragment" -->
+* Partner- und Portalmanagment<!-- .element: class="fragment" -->
+* Anzeigen (yield management)<!-- .element: class="fragment" -->
+* Vertrieb<!-- .element: class="fragment" -->
 
 ---
 
-# Woche für Woche
+# Fans finden
 
-- Iteration über Iteration
-- V1 V2 V3 V4 V5 V6 V7
-- Meeting für Meeting
-- Workshops veranstalten
+- Alle begeistern und mitnehmen<!-- .element: class="fragment" -->
+- Jede Kritik, jede Idee und jede Anmerkung ernst nehmen und wertschätzen<!-- .element: class="fragment" -->
+
+---
+
+![Workshop](assets/workshops.jpg)
 
 ---
 
 # Kompromisse finden
 
-- Haltung, Grundsätze und Leitlinien
-- Annahmen, Testing "Den User entscheiden lassen"
-- Quatsch weglassen (Große Bilder + Bilderstrecken ), Rectangle weglassen
-
+* Haltung, Grundsätze und Leitlinien
+* Annahmen, Testing "Den User entscheiden lassen"
+* "Nullversion"
 
 ---
 
 # GO GO GO
 
-- Die richtigen Leute finden und loslegen.
-- War einfach, Entwickler für das Projekt und die Vision zu finden. 
-- JIRA Projekt aufsetzen
-- Roadmap aufsetzen 
+---
 
+![Timetable](assets/timetable.png)
 
 ---
+
+- Die richtigen Leute finden und loslegen.
+![Team](assets/team.jpg)
 
 
