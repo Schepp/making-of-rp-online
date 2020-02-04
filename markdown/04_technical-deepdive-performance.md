@@ -177,3 +177,31 @@ self.addEventListener('fetch', event => {
 <svg><use xlink:href="#sprite-article"></use></svg>
 ```
 
+---
+
+<!-- .slide: data-background="assets/speedcurve-lighthouse.png" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Das Ergebnis ist ernüchternd
+
+---
+
+![Fast 1 Sekunde Time to First Byte](assets/network-time-to-first-byte.png)
+
+1 Sekunde Time to First Byte 🙈
+
+---
+
+![Webpagetest Wasserfall](assets/waterfall.jpg)
+
+HTTP/2 Priorisierung funktioniert nicht richtig 😭
