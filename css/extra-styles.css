@@ -137,6 +137,13 @@
   pointer-events: none;
 }
 
+.reveal section .livecoding-result {
+  background-color: #fff;
+  border: 1px solid #0003;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
 .reveal section table {
   background-color: #fff;
   border: 1px solid #0003;
@@ -216,6 +223,7 @@
 .reveal .side-by-side {
   display: grid;
   width: 100%;
+  margin: 0 auto;
   grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
   grid-gap: 0.5em;
 }
@@ -294,4 +302,50 @@
 .reveal .fragment.visible + h2 .text-reveal {
   max-width: 500px;
   letter-spacing: 0;
+}
+
+#stacking {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  background: #CCC;
+}
+
+#stacking .navigation {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 0 20px #000C;
+}
+
+#stacking .ad {
+  top: 30px;
+  right: 30px;
+  width: 250px;
+  height: 500px;
+  background: linear-gradient(to bottom, blue, purple);
+}
+
+#stacking [class]::before {
+  content: '.' attr(class);
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #000;
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+}
+
+#stacking .wrapper::before {
+  top: 70px;
+}
+
+#stacking .ad::before {
+  color: #fff;
+  text-shadow: 0 0 2px #000, 0 0 4px #000;
+}
+
+[contenteditable]:focus {
+  outline: none;
 }

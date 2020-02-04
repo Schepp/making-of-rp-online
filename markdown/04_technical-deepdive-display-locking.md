@@ -1,19 +1,10 @@
 <!-- .slide: data-background="assets/painted-canvas.jpg" -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 # Display Locking
 
 ---
 
-Also, die Startseite, die ist ja lang...
+Also, die Startseite, die ist ja lang…
 
 <video autoplay muted>
 <source data-src="assets/scrolling-homepage-desktop.mp4" type="video/mp4" />
