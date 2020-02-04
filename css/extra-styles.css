@@ -224,7 +224,7 @@
   display: grid;
   width: 100%;
   margin: 0 auto;
-  grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-template-columns: 1fr 1fr;
   grid-gap: 0.5em;
 }
 

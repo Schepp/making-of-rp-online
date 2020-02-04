@@ -132,7 +132,8 @@ body {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
+  max-width: 70%;
+  width: max-content;
   margin: 20px auto;
   padding: 5px;
   font-family: "Volkhov", "Times New Roman", Times, serif;

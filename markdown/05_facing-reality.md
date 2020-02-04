@@ -1,9 +1,8 @@
-# Dann kam das CMS
+## Im Oktober kam endlich das CMS 
 
 * PHP Code war wirr
 * Viel komplexer als gedacht
-
-* rewrite einiger Module, aber nicht alles
+* Rewrite einiger Module, aber nicht alles
 * "Model" / "Controller" / "View Logik"
 
 ---
@@ -11,7 +10,7 @@
 <!-- .slide: data-background="assets/park.jpg" -->
 # PARK
 
-* https://templates.park.works/
+[github.com/rp-online/park](https://github.com/rp-online/park)
 
 ---
 ![Workshop](assets/sites_00.jpg)
@@ -38,25 +37,25 @@
 ![Workshop](assets/sites_07.jpg)
 <!-- .slide: data-transition="fade" -->
 ---
-# Partner Verlage
+## Partner Verlage
 
-* Blöde blöde Overwrites
 * Einführung der Skins
+* Blöde, blöde "Overwrites"
 * So viele verschiedene Anforderungen!!! ?!?!? 🤯🤯🤯🤯🤯🤯
 
 ---
 
-# SONDERLOCKEN
+> Sonderlocken <!-- .element: style="font-size: 100px" -->
 
 
-* If $VERLAG !== "RP" 
+* `If $VERLAG !== "RP"` 
 * Konfiguration, denken in Feature Flags
 * Google Tag Manager
 * InApp Version
 
 ---
 
-# CACHE ME IF YOU CAN
+## Cache me if you can
 
 * Umstrukturierung zur Caching fähiges Seite 
 * Keine PHP Sessions 

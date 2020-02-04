@@ -1,48 +1,67 @@
 <!-- .slide: data-background="assets/rainy-day.jpg" -->
+
 # Relaunch 
+
 ---
+
 <!-- .slide: data-background="assets/rainy-day-sketch-all.jpg" -->
 
 ---
 
-# Stakeholder abholen und überzeugen
+## Stakeholder abholen & überzeugen
 
-* Redaktion<!-- .element: class="fragment" -->
-* SEO<!-- .element: class="fragment" -->
-* Partner- und Portalmanagment<!-- .element: class="fragment" -->
-* Anzeigen (yield management)<!-- .element: class="fragment" -->
-* Vertrieb<!-- .element: class="fragment" -->
-
----
-
-# Fans finden
-
-- Alle begeistern und mitnehmen<!-- .element: class="fragment" -->
-- Jede Kritik, jede Idee und jede Anmerkung ernst nehmen und wertschätzen<!-- .element: class="fragment" -->
+* Redaktion <!-- .element: class="fragment" -->
+* SEO <!-- .element: class="fragment" -->
+* Partner- und Portalmanagement <!-- .element: class="fragment" -->
+* Anzeigen (Yield Management) <!-- .element: class="fragment" -->
+* Vertrieb <!-- .element: class="fragment" -->
 
 ---
 
-![Workshop](assets/workshops.jpg)
+## Fans gewinnen 💗
+
+* Alle begeistern und mitnehmen <!-- .element: class="fragment" -->
+* Jede Kritik, jede Idee und jede Anmerkung<br> ernst nehmen und wertschätzen <!-- .element: class="fragment" -->
 
 ---
 
-# Kompromisse finden
+## Kompromisse finden
 
-* Haltung, Grundsätze und Leitlinien
-* Annahmen, Testing "Den User entscheiden lassen"
-* "Nullversion"
+<!-- .slide: data-background="assets/workshops-background-greyscale.jpg" -->
 
 ---
 
-# GO GO GO
+## Kompromisse finden
+
+Haltung, Grundsätze und Leitlinien
+
+Annahmen & Testing
+
+> Den User entscheiden lassen
+
+> Nullversion
 
 ---
 
-![Timetable](assets/timetable.png)
+## Go, Go, Go! 🏁
 
 ---
 
-- Die richtigen Leute finden und loslegen.
-![Team](assets/team.jpg)
+![Timetable](assets/timetable.png) <!-- .element: class="transparent" -->
+
+---
+
+<!-- .slide: data-background="assets/standup.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Die richtigen Leute finden und loslegen.
 
 

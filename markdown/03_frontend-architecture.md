@@ -12,7 +12,7 @@
     <li class="fragment">Performant</li>
     <li class="fragment">Sicher</li>
     <li class="fragment">Barrierefrei</li>
-    <li class="fragment">Resilient: Voll funktional, auch bei kaputtem/abgeschaltetem JS</li>
+    <li class="fragment">Resilient</li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
 
@@ -288,10 +288,10 @@
 
 <ul>
     <li class="fragment">Mobile First</li>
-    <li class="fragment">Moderner Stack (Chrome als Ausgangspunkt)</li>
+    <li class="fragment">Moderner Stack (Chrome als Basis)</li>
     <li class="fragment">So wenig JavaScript wie möglich</li>
     <li class="fragment">So wenig externe Libraries wie möglich</li>
-    <li class="fragment">Graceful Degradation: Alte Browser bekommen weniger</li>
+    <li class="fragment">Graceful Degradation</li>
     <li class="fragment"><blink>_</blink></li>
 </ul>
 
@@ -357,7 +357,7 @@ April 2017
 `aria-expanded="true/false"` + `aria-controls`  
 als generische Aufklappsteuerung.
 
-`<h3 aria-level="6">`, wenn SEO eine H3 wünscht,  
+`<h3 aria-level="6">`, z.B. wenn SEO eine H3 wünscht,  
 die Semantik aber eine H6 erfordert.
 
 `<div role="group">` anstatt `<legend>`,  
@@ -482,8 +482,7 @@ Was ist denn jetzt mit IE?
     img { 
       background-image: none !important;
       object-fit: cover; 
-    }
-  }
+  } }
 </style>
 <img src="data:image/svg+xml,%3Csvg xmlns='…' 
           width='261' height='196' %3E%3C/svg%3E" 
@@ -512,11 +511,11 @@ Was ist denn jetzt mit IE?
 
 <strong>Keine</strong> ES Module, sondern globales Utility-Objekt: `window.park`.
 
-<blink class="fragment">KEIN TYPESCRIPT!</blink>
+<blink class="fragment">KEIN TYPESCRIPT! 😱</blink>
 
 ---
 
-Wir nutzen moderne APIs:
+## Moderne Sprachfeatures & APIs:
 
 * element.closest()
 * element.matches()
@@ -526,8 +525,6 @@ Wir nutzen moderne APIs:
 * Mutation Observer
 * Intersection Observer
 * Web Worker
-* Service Worker
-* …
 
 ggf. inklusive Polyfills für alte Browser
 
@@ -535,10 +532,12 @@ ggf. inklusive Polyfills für alte Browser
 
 ## Code-Styles & Linter
 
-* editorConfig für die generelle Formatierung mit Spaces und Tabs
-* ESLint für JavaScript mit der AirBnB-Vorlage, mit leichten Anpassungen
-* StyleLint zum Prüfen zu tiefer Verschachtelung
-* JSONLint zur Prüfung unserer Dummy-Daten
+* **editorConfig** für die generelle Formatierung mit Spaces und Tabs
+* **ESLint** für JavaScript mit der **AirBnB**-Vorlage, mit leichten Anpassungen
+* **StyleLint** zum Prüfen des (S)CSS
+* **JSONLint** zur Prüfung unserer Dummy-Daten
+
+---
 
 <!-- .slide: data-background="assets/fake-javascript.png" -->
 

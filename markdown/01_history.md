@@ -1,6 +1,6 @@
 <!-- .slide: data-background="assets/scribble.jpg" -->
 
-# Es war einmal vor langer Zeit...
+# Es war einmal…
 
 ---
 ![Webseite 1996](assets/webseite-1996.jpg)

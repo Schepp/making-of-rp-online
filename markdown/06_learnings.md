@@ -1,4 +1,4 @@
-# LEARNINGS 
+# Learnings
 
 ---
 
@@ -8,7 +8,7 @@
 
 ---
  
-# API
+## APIs
 
 * WHAT THE HELL
 * Vieles Funktioniert oft gar nicht, wie beschrieben
@@ -16,10 +16,11 @@
 
 
 ---
+
 ![UX](assets/ux.png)
 
 ---
 
 * User Experience ist zur Prio in jeden Team geworden 
-* Einführung automatisierter End-To-End Tests mit Cypress
+* Einführung automatisierter End-To-End Tests (mit Cypress)
 
