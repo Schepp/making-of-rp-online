@@ -8,7 +8,36 @@
 
 ---
 
+<!-- .slide: data-background="assets/park.jpg" -->
+# PARK
 
+* https://templates.park.works/
+
+---
+![Workshop](assets/sites_00.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_01.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_02.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_03.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_04.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_05.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_06.jpg)
+<!-- .slide: data-transition="fade" -->
+---
+![Workshop](assets/sites_07.jpg)
+<!-- .slide: data-transition="fade" -->
+---
 # Partner Verlage
 
 * Blöde blöde Overwrites
@@ -18,6 +47,7 @@
 ---
 
 # SONDERLOCKEN
+
 
 * If $VERLAG !== "RP" 
 * Konfiguration, denken in Feature Flags
@@ -34,16 +64,6 @@
 
 ---
 
+<!-- .slide: data-background="assets/paging.png" -->
 
-![Paging](assets/paging.png)
-
----
- 
-# Arbeiten mit APIS
-
-* WHAT THE HELL
-* Vieles Funktioniert oft gar nicht, wie beschrieben
-* Learning: Immer 2x 3x mehr Aufwand einplanen, wenn API von extern kommen.
-
----
 
