@@ -7,13 +7,12 @@
 ## Übergeordnete Ziele
 
 <ul>
-    <li class="fragment">Skalierbar / Komponentenbasiert</li>
-    <li class="fragment">Nachvollziehbar und wartbar</li>
-    <li class="fragment">Performant</li>
-    <li class="fragment">Sicher</li>
-    <li class="fragment">Barrierefrei</li>
-    <li class="fragment">Resilient</li>
-    <li class="fragment"><blink>_</blink></li>
+    <li class="">Skalierbar / Komponentenbasiert</li>
+    <li class="">Nachvollziehbar und wartbar</li>
+    <li class="">Performant</li>
+    <li class="">Sicher</li>
+    <li class="">Barrierefrei</li>
+    <li class="">Resilient</li>
 </ul>
 
 ---
@@ -287,12 +286,12 @@
 ## Technische Grundprinzipien
 
 <ul>
-    <li class="fragment">Mobile First</li>
-    <li class="fragment">Moderner Stack (Chrome als Basis)</li>
-    <li class="fragment">So wenig JavaScript wie möglich</li>
-    <li class="fragment">So wenig externe Libraries wie möglich</li>
-    <li class="fragment">Graceful Degradation</li>
-    <li class="fragment"><blink>_</blink></li>
+    <li class="">Mobile First</li>
+    <li class="">Moderner Stack (Chrome als Basis)</li>
+    <li class="">So wenig JavaScript wie möglich</li>
+    <li class="">So wenig externe Libraries wie möglich</li>
+    <li class="">Graceful Degradation</li>
+    <li class=""><blink>_</blink></li>
 </ul>
 
 ---
