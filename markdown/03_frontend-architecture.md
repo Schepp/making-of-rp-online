@@ -543,10 +543,11 @@ ggf. inklusive Polyfills für alte Browser
 
 ## Sonstiges?
 
-* SCSS als Pre-Compiler + PostCSS als Post-Processor
-* Babel zum Transpilieren + Terser zum Minifizieren
-* Gulp als Task-Runner, Node-Tooling
-* Source Maps auch in Production
+* **SCSS** als Pre-Compiler + **PostCSS** als Post-Processor
+* **Babel** zum Transpilieren + **Terser** zum Minifizieren
+* **Webpack** für spezielle Spezialsachen :)
+* **Gulp** als Task-Runner, Node-Tooling
+* **Source Maps** auch in Production
 
 ---
 

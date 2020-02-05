@@ -24,3 +24,6 @@
 * User Experience ist zur Prio in jeden Team geworden 
 * Einführung automatisierter End-To-End Tests (mit Cypress)
 
+---
+
+<blink>_</blink>
