@@ -21,7 +21,7 @@
 * mehr so "semi-agil"
 * RP versteht sich nicht als Technologieunternehmen
 * mittags ruft man sich "Maaahlzeit" zu
-* mieses Backend!
+* komplexes Backend
 
 ---
 

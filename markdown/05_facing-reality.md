@@ -1,9 +1,33 @@
+<!-- .slide: data-background="assets/cms.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# CMS 
+
+---
+
 ## Im Oktober kam endlich das CMS 
 
-* PHP Code war wirr
-* Viel komplexer als gedacht
-* Rewrite einiger Module, aber nicht alles
-* "Model" / "Controller" / "View Logik"
+* PHP Implementierung war historisch gewachsen<!-- .element: class="fragment" -->
+* Komplexer als angenommen<!-- .element: class="fragment" -->
+* "rewrite"<!-- .element: class="fragment" -->
+* Module und Architektur wurden umstrukturiert<!-- .element: class="fragment" -->
+* "Daten" / "Model" / "Controller" / "View"<!-- .element: class="fragment" -->
+
+---
+
+## Cache me if you can
+
+* Umstrukturierung zur Caching fähige Seite<!-- .element: class="fragment" -->
+* Keine PHP Sessions<!-- .element: class="fragment" -->
+* CeleraOne / Middleware mit State<!-- .element: class="fragment" -->
 
 ---
 
@@ -11,6 +35,10 @@
 # PARK
 
 [github.com/rp-online/park](https://github.com/rp-online/park)
+
+---
+
+![Webserver Architecture](assets/webserver_architecture.png)
 
 ---
 ![Workshop](assets/sites_00.jpg)
@@ -39,30 +67,23 @@
 ---
 ## Partner Verlage
 
-* Einführung der Skins
-* Blöde, blöde "Overwrites"
-* So viele verschiedene Anforderungen!!! ?!?!? 🤯🤯🤯🤯🤯🤯
+* Blöde, blöde "Overwrites"<!-- .element: class="fragment" -->
+* Einführung der Skins<!-- .element: class="fragment" -->
+* So viele verschiedene Anforderungen!!!?!? 🤯🤯🤯🤯🤯<!-- .element: class="fragment" -->
 
 ---
 
 > Sonderlocken <!-- .element: style="font-size: 100px" -->
 
-
-* `If $VERLAG !== "RP"` 
-* Konfiguration, denken in Feature Flags
-* Google Tag Manager
-* InApp Version
-
----
-
-## Cache me if you can
-
-* Umstrukturierung zur Caching fähiges Seite 
-* Keine PHP Sessions 
-* PAYWALL mit CeleraOne / Middleware mit State
+* `If $PUBLICATION !== "RP"`<!-- .element: class="fragment" -->
+* Konfiguration, denken in Feature Flags<!-- .element: class="fragment" -->
+* Google Tag Manager<!-- .element: class="fragment" -->
+* InApp Version<!-- .element: class="fragment" -->
 
 ---
 
-<!-- .slide: data-background="assets/paging.png" -->
+![FeatureFlags](assets/feature_flags.png)
 
+---
 
+<blink>_</blink>
