@@ -18,11 +18,6 @@
 
 ---
 
-![Workshop](assets/sites_05.jpg)
-<!-- .slide: data-transition="fade" -->
-
----
-
 ## Fans gewinnen 💗
 
 * Alle begeistern und mitnehmen <!-- .element: class="fragment" -->
@@ -48,7 +43,7 @@ Annahmen & Testing
 
 ---
 
-![Workshop](assets/interred.png)
+![Interred](assets/interred.png)
 <!-- .slide: data-transition="fade" -->
 
 
