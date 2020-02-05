@@ -29,15 +29,56 @@
 
 ---
 
-* geiles Frontend!
-* diverses Entwicklerteam (Frau/Mann, Alt/Jung, mit/ohne Handicap)
-* mega Kantine! 
-* familienfreundlich (Eltern-Kind-Büros, Halbtagsarbeit)
-* niemals(!) Überstunden
-* Home Office auf Zuruf
+## Geiles Frontend!
+
+---
+
+## Diverses Entwicklerteam
+
+![Team](assets/team.jpg)
+
+Alles vertreten: Frau/Mann, alt/jung, mit/ohne Handicap
+
+---
+
+## Mega Kantine!
+
+<!-- .slide: data-background="assets/aktionsmenu-teller.jpg" -->
+
+Auch vegetarisch. Preise von 3,50 bis 7,90
+
+---
+
+<!-- .slide: data-background="assets/familienfreundlich.jpg" -->
+
+## Familienfreundlich
+
+Halbtagsarbeit & Eltern-Kind-Büros
+
+---
+
+<!-- .slide: data-background="assets/lamm.jpg" -->
+
+## Tierfreundlich
+
+---
+
+<!-- .slide: data-background="assets/campus-park.jpg" -->
+
+## Work-Life-Balance
+
+Niemals Überstunden, 30 Urlaubstage & Home Office auf Zuruf
+
+---
+
+## Und auch sonst…
+
+* Laptop und Handy nach Wunsch
+* Jobrad
 * Elektroladestationen für Fahrräder und Autos
-* Technische Ausrüstung nach Wunsch, Jobrad
 * Ab und zu prominente Besucher oder Show-Acts
+* Sportkurse, Massagen…
+* STÄNDIG KUCHEN!
 
 ---
 
