@@ -41,6 +41,23 @@
 
 ---
 
+![Wir sind RP Digital](assets/we-are-rp-digital.jpg)
+
+[facebook.com/rpdigital.gmbh](https://www.facebook.com/rpdigital.gmbh/)
+
+---
+
+<!-- .slide: data-background="assets/golden-bokeh.jpg" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## 👇
 
 [rp-online.de/info/jobs/frontend-entwickler.html](https://rp-online.de/info/jobs/frontend-entwickler.html)
